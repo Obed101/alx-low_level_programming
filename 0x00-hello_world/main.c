@@ -5,7 +5,10 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-    return (0);
+
+printf( "Hi! I'm here!");
+  return (0);
 }
