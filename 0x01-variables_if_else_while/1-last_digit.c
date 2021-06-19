@@ -6,7 +6,7 @@
   *main - Entry point
   *
   *Return: Always 0 (Success)
-  */
+*/
 int Last_Digit(int num); /* betty style doc for function main goes there */
 int main(void)
 {
@@ -21,11 +21,11 @@ int main(void)
 		printf("is ");
 		if (LastDigit > 5)
 		{
-			printf("%d and is greater than 5", LastDigit);
+			printf("%d and is greater than 5\n", LastDigit);
 		}
 		if (LastDigit == 0)
 		{
-			printf("%d and is 0", LastDigit); /* your code goes there */
+			printf("%d and is 0\n", LastDigit); /* your code goes there */
 		}
 		if (LastDigit < 6)
 		{
