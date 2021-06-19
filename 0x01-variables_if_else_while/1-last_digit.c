@@ -6,8 +6,7 @@
   *main - Entry point
   *
   *Return: Always 0 (Success)
-  */
-int Last_Digit(int num); /* betty style doc for function main goes there */
+  */ /* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
