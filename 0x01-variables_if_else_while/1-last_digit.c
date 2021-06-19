@@ -6,27 +6,30 @@
   *main - Entry point
   *
   *Return: Always 0 (Success)
-  */ /* betty style doc for function main goes there */
+  */
+int Last_Digit(int num); /* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
+	int LastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	LastDigit = n % 10;
 	printf("Last digit of ");
-		printf("%d", n);
+		printf("%d ", n);
 		printf("is ");
-		if (n > 5)
+		if (LastDigit > 5)
 		{
-			printf("and is greater than 5");
+			printf("%d and is greater than 5", LastDigit);
 		}
-		if (n == 0)
+		if (LastDigit == 0)
 		{
-			printf("and is 0"); /* your code goes there */
+			printf("%d and is 0", LastDigit); /* your code goes there */
 		}
-		if (n < 6)
+		if (LastDigit < 6)
 		{
-			printf("and is less than 6 and not 0\n");
+			printf("%d and is less than 6 and not 0\n", LastDigit);
 		}
 		return (0);
 }
