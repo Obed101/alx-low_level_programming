@@ -24,11 +24,11 @@ int main(void)
 		}
 		if (LastDigit == 0)
 		{
-			printf("%d and is 0\n", LastDigit); /* your code goes there */
+			printf("%d and is 0\n", LastDigit);
 		}
-		if ((LastDigit < 6) != 0)
+		if (LastDigit < 6 && LastDigit != 0)
 		{
 			printf("%d and is less than 6 and not 0\n", LastDigit);
-		}
+		} /* your code goes there */
 		return (0);
 }
