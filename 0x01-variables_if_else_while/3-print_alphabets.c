@@ -11,8 +11,8 @@ int main(void)
 
 	while (alphabets <= 'z')
 	{
-       putchar(alphabets);
-        alphabets++;
+		putchar(alphabets);
+		alphabets++;
 	}
 	while (caps <= 'Z')
 	{	putchar(caps);
