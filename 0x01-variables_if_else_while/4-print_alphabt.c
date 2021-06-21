@@ -4,9 +4,10 @@
   *
   *Return: Always 0 (Success)
   */
-int main (void)
+int main(void)
 {
 	char ch;
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch != 'q' && ch != 'e')
@@ -14,5 +15,5 @@ int main (void)
 		if (ch == 'z')
 			putchar('\n');
 }
-	return 0;
+	return (0);
 }
