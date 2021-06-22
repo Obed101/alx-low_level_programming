@@ -1,11 +1,11 @@
 #include <stdio.h>
+#include <holberton.h>
 /**
   *main - Entry point
   *
   *Return: Always 0 (Success)
   */
-int print_alphabet_x10()
-
+print_alphabet_x10();
 {
         char a = '0', b;
 
