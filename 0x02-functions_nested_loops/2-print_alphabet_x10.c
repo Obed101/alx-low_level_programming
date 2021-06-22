@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-int main(void)
+int print_alphabet_x10()
+
 {
-        char a = 'a';
+        char a = '0', b;
 
-        for (a = 'a'; a <= 'z'; a++)
-        {
+	while(a <= 10)
+	{
+		b = 'a';
 
-        char b = '1';
-
-        while (b <= 10)
-        {
-                putchar(a);
-		b++;
-        }
-        putchar ('\n');
+		while(b <= 'z')
+		{
+			putchar(a);
+				a++;
+		}
+		putchar('\n');
+			a++;
         }
         return (0);
 }
