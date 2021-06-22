@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
-  *main - Entry point
-  *
-  *Return: Always 0 (Success)
-  */
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
+ */
 int print_alphabet(void)
 {
 	char a = 'a';
