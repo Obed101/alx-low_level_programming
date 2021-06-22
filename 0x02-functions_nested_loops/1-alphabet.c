@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
- */
+  *main - Entry point
+  *
+  *Return: Always 0 (Success)
+  */
 int print_alphabet(void)
 {
 	char a = 'a';
