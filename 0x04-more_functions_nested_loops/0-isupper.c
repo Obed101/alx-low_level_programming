@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ * _isupper - function that checks for uppercase character.
+ * @c: the int for the paramaters of my function
+ * Return: 0
  */
 int _isupper(int c)
 {
