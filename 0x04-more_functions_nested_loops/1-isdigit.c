@@ -1,19 +1,18 @@
 #include "holberton.h"
+
 /**
- * _isdigit - check the code for ALX School students.
- *
- * @c: Character to pass to _isdigit function.
- *
- * Return: Always 0.
+ * _isdigit - checks for lowercase character.
+ * @c: character recibol for main.
+ * Return: 1 if c is uppercase
  */
 int _isdigit(int c)
 {
-        if ((c >= 48) && (c <= 57))
-        {
-                return (1);
-        }
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
 	else
 	{
-                return (0);
-        }
+		return (0);
+	}
 }
