@@ -2,7 +2,7 @@
 /**
  * _isdigit - check the code for ALX School students.
  *
- * @c: Character to pass to _isdigit function
+ * @c: Character to pass to _isdigit function.
  *
  * Return: Always 0.
  */
