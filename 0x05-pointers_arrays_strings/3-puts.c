@@ -2,7 +2,6 @@
 /**
  * _puts- prints string
  *
- *@in: integer variable
  *@str: string variable
  * Return: Always 0.
  */
