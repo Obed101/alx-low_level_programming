@@ -2,7 +2,7 @@
 /**
  * print_rev - prints in reverse
  *
- *@in: integer variable
+ *@s: integer variable
  *@str: string to be reversed
  *Return: Always 0.
  */
@@ -12,7 +12,7 @@ void print_rev(char *s)
 
 	while (*(str + in))
 	{
-		_putchar(*(str + in));
+		print_rev(*(s));
 		in++;
 	}
 	_putchar('\n');
