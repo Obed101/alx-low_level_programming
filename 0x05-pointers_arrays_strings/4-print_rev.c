@@ -3,7 +3,6 @@
  * print_rev - prints in reverse
  *
  *@s: integer variable
- *@str: string to be reversed
  *Return: Always 0.
  */
 void print_rev(char *s)
