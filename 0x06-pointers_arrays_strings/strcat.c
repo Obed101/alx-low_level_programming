@@ -1,5 +1,22 @@
 #include "holberton.h"
 /**
+ *_strlen - counts the lenght of string
+ *
+ *@s: string variable
+ *Return: not zero (lenght)
+ */
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while (*s != '\0')
+	{
+		length++;
+		s++;
+	}
+	return (length);
+}
+/**
  * *_strcat - concartenares strings.
  *
  * @s2[]: a variable
