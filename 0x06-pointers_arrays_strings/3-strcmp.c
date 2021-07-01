@@ -16,6 +16,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		s1++;
 		s2++;
+	}
 
 	if(*s1 == *s2)
 	{
@@ -25,6 +26,5 @@ int _strcmp(char *s1, char *s2)
 	else /* if not identical*/
 	{
 		return (no);
-	}
 	}
 }
