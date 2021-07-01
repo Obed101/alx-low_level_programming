@@ -4,7 +4,7 @@
  *
  * @s1: first string constant
  * @s2: second string pointer constant
- *
+ * @identical: int variable
  * return: 1 or 0
  */
 int _strcmp(char *s1, char *s2)
