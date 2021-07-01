@@ -1,7 +1,0 @@
-/**
- * *_strncpy - find length of a string
- * @dest: pointer to the string
- * @src :source  pointer
- * @n: integer representing a size
- * Return: destination
-*/

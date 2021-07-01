@@ -2,26 +2,29 @@
 /**
  * _strcmp - compares two strings
  *
- * @s1: first string variable
- * @s2: second string pointer variable
+ * @s1: first string constant
+ * @s2: second string pointer constant
  *
  * return: 1 or 0
  */
 int _strcmp(char *s1, char *s2)
 {
-    while( ( *s1 != '\0' && *s2 != '\0' ) && *s1 == *s2 )
-    {
-        s1++;
-        s2++;
-    }
+	int identical = 0;
+	int no = 1;
 
-    if(*s1 == *s2)
-    {
-	    return (0); /* strings are identical*/
-    }
+	while( ( *s1 != '\0' && *s2 != '\0' ) && *s1 == *s2 )
+	{
+		s1++;
+		s2++;
 
-    else /* if not identical*/
-    {
-	    return (1);
-    }
+	if(*s1 == *s2)
+	{
+		return (identical); /* strings are identical*/
+	}
+
+	else /* if not identical*/
+	{
+		return (no);
+	}
+	}
 }
