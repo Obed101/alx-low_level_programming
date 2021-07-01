@@ -4,22 +4,22 @@
  *
  * @s1: first string constant
  * @s2: second string pointer constant
- * @identical: int variable
- * return: 1 or 0
+ * 
+ * return: 1 / 0
  */
 int _strcmp(char *s1, char *s2)
 {
-	int identical = 0;
+	int equal = 0;
 
 	while (*s1)
 	{
 		if (*s1 != *s2)
 		{
-			identical = ((int)*s1 - 48) - ((int)*s2 - 48);
+			equal = ((int)*s1 - 48) - ((int)*s2 - 48);
 			break;
 		}
 		s1++;
 		s2++;
 	}
-	return (identical);
+	return (equal);
 }
