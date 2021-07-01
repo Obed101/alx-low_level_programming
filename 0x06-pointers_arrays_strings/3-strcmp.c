@@ -1,25 +1,19 @@
 #include "holberton.h"
 /**
- * _strcmp - compares two strings
- *
- * @s1: first string constant
- * @s2: second string pointer constant
- * 
- * return: 1 / 0
+ * _strcmp - writes the character c to stdout
+ * @s1: The character to print
+ * @s2: pointer to print
+ * Return: On success 1.
+ * On error, -1 is returned
  */
 int _strcmp(char *s1, char *s2)
 {
-	int equal = 0;
+	int a = 0;
 
-	while (*s1)
+	while (s1[a] == s2[a] && s1[a] && s2[a])
 	{
-		if (*s1 != *s2)
-		{
-			equal = ((int)*s1 - 48) - ((int)*s2 - 48);
-			break;
-		}
-		s1++;
-		s2++;
+		a++;
 	}
-	return (equal);
+
+	return (s1[a] - s2[a]);
 }
