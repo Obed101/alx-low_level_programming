@@ -2,21 +2,19 @@
 
 /**
  * _memset - sets the memory pointyed to with char
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * @s: the address in memory to fill
+ * @b: the char variable to fill in the memory
+ * @n: the memory size
  *
- * Return: Nothing.
+ * Return: pointer to string
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	b = "000000000062FE3C"
-	int x = 1;
-	s = &b;
+	unsigned int unt;
 
-	_memset(s, b, n);
+	for (unt = 0; unt < n; unt++)
+	s[unt] = b;
 
-	printf("%s\n", s);
-
-	return (0);
+	return (s);
 }
