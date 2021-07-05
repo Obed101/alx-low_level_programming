@@ -1,0 +1,1 @@
+Detailed_pointers, arrays, strings_ **here!**
