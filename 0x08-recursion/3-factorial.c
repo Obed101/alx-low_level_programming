@@ -1,16 +1,21 @@
 #include "holberton.h"
+
 /**
- *factorial - returns the factors multiplied
- *
- *@n: number/integer
- *
- *return: 0 or -1
+ * factorial - calculates the factorial of a number.
+ * @n: the number
+ * Return: factorial
  */
 int factorial(int n)
 {
+	int fac = 1;
+
 	if (n < 0)
 		return (-1);
 
-	if (n = 0)
-		return (n * factorial(n));
+	else if (!n)
+		return (1);
+
+	fac = factorial(n - 1);
+
+	return (fac * n);
 }
