@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _print_rec_recursion - prints reverse recursion
+ *_print_rev_recursion - prints reverse recursion
  *
  *@s: string to be reversed
  *
