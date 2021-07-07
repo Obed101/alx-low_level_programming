@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_strlen_recursion - returns lenght
+ *_strlen_recursion - returns lenght of string
  *
  *@s: string
  *return: integer
