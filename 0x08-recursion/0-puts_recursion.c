@@ -2,8 +2,8 @@
 /**
  *_puts_recursion - prints a string in recursion
  *
- *@s - string
- *
+ * @s: string
+ * @*s: str
  *
  *return - void
  */
