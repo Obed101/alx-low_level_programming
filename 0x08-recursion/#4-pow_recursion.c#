@@ -1,0 +1,11 @@
+#include "holberton.h"
+/**
+ *factorial - returns the multiplications of factors
+ *@n: number on board
+ *return: int
+ */
+int factorial(int n)
+{
+
+       
+}
