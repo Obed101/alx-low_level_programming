@@ -5,10 +5,18 @@
  *@s - string
  *
  *
- *
+ *return - void
  */
 void _puts_recursion(char *s)
-{
 
-	return ();
+{
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
+
+	return ;
 }
