@@ -1,0 +1,1 @@
+This Folder is _not_ for C but rather for **static libraries**

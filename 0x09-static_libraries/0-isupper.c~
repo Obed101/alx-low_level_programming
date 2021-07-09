@@ -1,0 +1,9 @@
+#include "holberton.h"
+/**
+ * cant find my file so just created one
+ */
+int _isupper(int c)
+{
+
+	return (0);
+}
