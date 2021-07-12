@@ -4,7 +4,6 @@
 /**
  * main - prints two multiplied integers
  *
- * @mul: int variable that multiplies two numbers
  * @argc: counts arguments
  * @argv: prints arguments
  * Return: 0 if successful
