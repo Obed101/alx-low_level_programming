@@ -4,7 +4,7 @@
  *main - entry point
  *@argc: variable that counts the number of arguments
  *@argv: variable, array, pointer, of strings
- *exit: stops everything if success, print correct output
+ *return: stops everything if success, print correct output
  */
 
 int main(int argc __attribute__((unused)), char *argv[])
