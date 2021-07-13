@@ -1,2 +1,2 @@
-<h1> MALLOC ===> space </h1>
-<h4>_freeeeeeee..._</h4>
+<h1> MALLOC ===>allocate space </h1>
+<h4>Free____free the space</h4>
