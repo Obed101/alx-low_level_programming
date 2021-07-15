@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+/**
+ * _calloc - allocates multiple blocks of memory
+ *@nmemb: unsigned int argument to calloc
+ *@size: the size to add
+ *
+ * Return: a pointer on success
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
