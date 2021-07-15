@@ -25,16 +25,15 @@ int main(int ac, char **av)
 		mul = num1 * num2;
 
 		if (isdigit(num1) && isdigit(num2))
-
 		{
 			printf("%ld\n", mul);
 			return (0);
 		}
 		else
 		{
-			puts("Error\n");
+			puts("Error");
 			exit(98);
 		}
 	}
-	return(0);
+	return (0);
 }
