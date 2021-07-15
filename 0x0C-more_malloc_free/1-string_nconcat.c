@@ -6,7 +6,7 @@
  * string_nconcat - a function that combines two strings
  * @s1: the first string
  * @s2: the second string
- * @n: the numbeer of bytes to add
+ * @n: the number of bytes to add
  *
  * Return: NULL or pointer to reallocated space
  */
@@ -54,9 +54,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  */
 int _strlen(char *s)
 {
-	int total;
+	int combb;
 
-	for (total = 0; s[total] != '\0'; total++)
-		;
-	return (total);
+	for (combb = 0; s[combb] != '\0'; combb++);
+
+	return (combb);
 }
