@@ -6,3 +6,4 @@ int _strlen(char *s);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _atoi(char *s);
 int _strlen(char *s);
+int _putchar(char c);
