@@ -22,5 +22,5 @@ int *array_range(int min, int max)
 		return (NULL);
 	for (i = 0; i < sz && min <= max; i++, min++)
 		*(p + i) = min;
-	return (p);}
+	return (p);
 }
