@@ -3,7 +3,7 @@
 
 /**
  * *_realloc - allocates a new memory space/ extends it
- * @*ptr: the pointer for the memory address
+ * @ptr: the pointer for the memory address
  * @old_size: the old address
  * @new_size: the new allocated size/ address
  *
