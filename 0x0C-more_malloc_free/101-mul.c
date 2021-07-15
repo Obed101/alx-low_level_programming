@@ -1,86 +1,28 @@
-#include <stdio.h>
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
-
-
 /**
- * main - function with two arguments
- * @argc: argument count
- * @argv: argument value
- *
- * Description: program that multiplies two positive numbers
- * Return: value
+ *main - function
+ *@ac: int
+ *@av: char
+ *Return: int
  */
-int main(int argc, char *argv[])
+int main(int ac, char **av)
 {
-	int count, len1, len2, temp1, temp2, *array, *result;
+	long int num1 = 0, num2 = 0, mul;
 
-	if (argc != 3)
+	if (ac != 3)
 	{
-		printf("Error\n");
-		exit (98);
+		puts("Error");
+		exit(98);
 	}
-
-	len1 = _strlen(argv[1]);
-	len2 = _strlen(argv[2]);
-	t_len = len1 + len2 - 1;
-
-	array = malloc(sizeof(char) * (len1 + len2 + 1));
-	if (array == NULL)
-		return (NULL);
-
-	len1 -= 1;
-	len2 -= 1;
-	for (count = 1; argv[count] != '\0', count++)
+	else
 	{
-		for (; argv[1][len1]; len1--)
-		{
-			temp1 = argv[1][len1 - 1] - '0';;
-		}
-		for (; argv[2][len2]; len2--)
-		{
-			temp2 = argv[2][len2 - 1] - '0';
-		}
-		for (; array[t_len] > 0
-			     if ((temp1 * temp2) > 9)
-				     array[
-					     }
-			     }
+		num1 = atoi(av[1]);
+		num2 = atoi(av[2]);
+		mul = num1 * num2;
 
-		int _atoi(char *s)
-		{
-			int i, sign, numb;
-
-			i = 0;
-			sign = 1;
-			numb = 0;
-
-			while (s[i] != '\0')
-			{
-				if (s[i] == '-')
-					sign *= -1;
-				if (s[i] >= '0' && s[i] <= '9')
-				{
-					while (s[i] >= '0' && s[i] <= '9')
-					{
-						numb = (s[i] - '0') * sign + numb * 10;
-						i++;
-					}
-					break;
-				}
-				i++;
-			}
-			return (numb);
-		}
-
-		int _strlen(char *s)
-		{
-			int i;
-
-			i = 0;
-			while (*(s + i) != '\0')
-			{
-				i++;
-			}
-			return (i);
-		}
+		printf("%ld\n", mul);
+		return (0);
+	}
+}
