@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * malloc_checked - allocates memory to a pointer using malloc
+ * *malloc_checked - allocates memory to a pointer using malloc
  * @b: unsigned int variabe to tell which space to alllocate
  * @po: pointer to the allocated space
  *
@@ -21,8 +21,8 @@ void *malloc_checked(unsigned int b)
 	}
 	else
 	{
-		return (po);
+		return\(po);
 	}
 
-	return (0);
+	return(0);
 }
