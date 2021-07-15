@@ -12,51 +12,31 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, len, count;
-	char *ptr;
+	char *sup;
+	int i;
+	unsigned int j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	len = _strlen(s2);
-
-	if (n >= len)
-		ptr = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
-	else
-		ptr = malloc(sizeof(char) * (_strlen(s1) + n + 1));
-	if (ptr == NULL)
-		return (NULL);
-
-	count = 0;
-	while (s1[count] != '\0')
-	{
-		ptr[count] = s1[count];
-		count++;
-	}
 	i = 0;
-	while (s2[i] != '\0' && i < n)
+	while (s1[i] != '\0')
+		i++;
+	sup = malloc(sizeof(char) * (i + n + 1));
+	if (sup == NULL)
+		return (NULL);
+	i = j = 0;
+	while (s1[i] != '\0')
 	{
-		ptr[count] = s2[i];
-		count++;
+		sup[i] = s1[i];
 		i++;
 	}
-	ptr[count] = '\0';
-	return (ptr);
-}
-
-/**
- * _strlen - Returns the length of a string
- * @s: The given string
- *
- * Return: length of the string
- */
-int _strlen(char *s)
-{
-	int combb;
-
-	for (combb = 0; s[combb] != '\0'; combb++);
-
-	return (combb);
+	while (j < n && s2[j] != '\0')
+	{
+		sup[i] = s2[j];
+		i++, j++;
+	}
+	sup[i] = '\0';
+	return (sup);
 }
