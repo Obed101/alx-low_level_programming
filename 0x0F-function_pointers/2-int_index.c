@@ -8,12 +8,12 @@
  *
  * Return: the index (i)
  */
-int int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(ODint))
 {
 	int i;
 
 	if (!array || size <= 0 || !cmp)
-		return(-1);
+		return (-1);
 	for (i = 0; i < size; i++)
 	{
 		if(cmp(array[i]))
