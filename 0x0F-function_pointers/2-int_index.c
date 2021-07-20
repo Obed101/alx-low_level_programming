@@ -8,7 +8,7 @@
  *
  * Return: the index (i)
  */
-int int_index(int *array, int size, int (*cmp)(ODint))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
