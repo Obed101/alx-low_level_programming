@@ -1,55 +1,33 @@
 #include <stdio.h>
-#include "function_pointers.h"
+#include <stdlib.h>
+#include "3-calc.h"
 
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
+ * main - performs simple operations
+ * @argc: number of arguments passed
+ * @argv: array of pointers to arguments
  *
- * Return: 0 if false, something else otherwise.
+ * Return: always 0
  */
-int is_98(int elem)
+int main(int argc, char *argv[])
 {
-	return (98 == elem);
-}
+	int a, b, c;
+	int (*f)(int, int);
 
-/**
- * is_strictly_positive - check if a number is strictly not less than 1
- * @elem: the integer to check
- *
- * Return: 0 if false, something else otherwise.
- */
-int is_strictly_positive(int elem)
-{
-	return (elem > 0);
-}
-
-
-/**
- * abs_is_98 - check if the value of a number is 98
- * @elem: the integer to check
- *
- * Return: 0, or any other thing
- */
-int abs_is_98(int elem)
-{
-	return (elem == 98 || -elem == 98);
-}
-
-/**
- * main - entry point
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -98, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 98};
-	int index;
-
-	index = int_index(array, 20, is_98);
-	printf("%d\n", index);
-	index = int_index(array, 20, abs_is_98);
-	printf("%d\n", index);
-	index = int_index(array, 20, is_strictly_positive);
-	printf("%d\n", index);
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	f = get_op_func(argv[2]);
+	if (f == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	c = f(a, b);
+	printf("%d\n", c);
 	return (0);
 }
