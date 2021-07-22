@@ -15,11 +15,10 @@ int sum_them_all(const unsigned int n, ...)
 	va_list lst;
 
 	va_start(lst, n);
-
 	for(i = 0; i < b; i++)
 	{
 		b = va_arg(lst, const unsigned int);
-		num *= b;
+		num += b;
 	}
 	va_end(lst);
 
@@ -27,5 +26,6 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		return (0);
 	}
+
 	return (num);
 }
