@@ -9,14 +9,16 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int i, num = 0, b;
+	unsigned int i;
+	int num = 0;
+	unsigned int b;
 	va_list lst;
 
 	va_start(lst, n);
 
 	for(i = 0; i < b; i++)
 	{
-		b = va_arg(lst, n);
+		b = va_arg(lst, const unsigned int);
 		num *= b;
 	}
 	va_end(lst);
