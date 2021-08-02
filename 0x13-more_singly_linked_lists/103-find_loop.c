@@ -9,7 +9,7 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *fn, *hare;
+	listint_t *fn, *sn;
 
 	fn = sn = head;
 	while (fn && sn && sn->next)
@@ -24,7 +24,7 @@ listint_t *find_listint_loop(listint_t *head)
 	}
 	if (!fn || !sn || !sn->next)
 		return (NULL);
-	while (fn != hare)
+	while (fn != sn)
 	{
 		fn = fn->next;
 		fn = sn->next;
