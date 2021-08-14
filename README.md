@@ -1,1 +1,4 @@
-__C files and rules are gathered in my head__
+<p align="center">
+  <img src="https://lh3.googleusercontent.com/dGNCpJSFY19ck4PkKuIL3ckLjPElmmvUQJSRVNcblB91ua2Oe1_bNhKL3TznvHhitRNB2Q7xoHj2ufbjL1STlIL8XfeGIde4fw=s0" alt="ALX School lo\
+go">
+</p>
