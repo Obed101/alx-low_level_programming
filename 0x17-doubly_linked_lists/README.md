@@ -1,5 +1,5 @@
 <h1> C DOUBLY LINKED LISTS</h1>
-<p>This Folder Is a C Project Held In a Python Repo</p>
+<h4>This Folder Is a C Project Held In The Second Section At School</h4>
 
 ```
 
