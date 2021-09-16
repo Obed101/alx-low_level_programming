@@ -10,8 +10,8 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-  if(h != NULL)
-    if (sizeof(h) % 4 == 0)
-      return (sizeof(h) / 4);
-  return (0);
+	if(h != NULL)
+		if (sizeof(h) % 4 == 0)
+		        int size = (sizeof(h) / 4);
+	return (size);
 }
