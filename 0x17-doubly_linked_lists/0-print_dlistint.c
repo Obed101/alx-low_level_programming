@@ -10,8 +10,12 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-  if(h != NULL)
-    if (sizeof(h) % 4 == 0)
-      printf("%d\n", h);
-  return (sizeof(h) / 4);
+  int size = 0;
+  while(h != 0)
+    {
+      ++size;
+      printf("%d\n", h->n);
+      h = h->next;
+    }
+  return (size);
 }
