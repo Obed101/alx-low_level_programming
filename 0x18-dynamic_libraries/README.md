@@ -1,5 +1,4 @@
-# DYNAMIC LIBRARIES
-### Dynamically available obj files for program execution
+# C DYNAMIC LIBRARIES
 ```
 ar ... ... ...
 ```
