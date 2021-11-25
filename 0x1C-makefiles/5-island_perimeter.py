@@ -1,5 +1,5 @@
-  #!/usr/bin/python3
-  """This module defines isand"""
+#!/usr/bin/python3
+"""This module defines isand"""
 
 
 def island_perimeter(grid):
