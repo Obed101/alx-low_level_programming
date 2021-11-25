@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-	"""Defiines island representing land and water with
+	"""Defiines island representing land and wt with
     0 and 1 respectively
     """
 	x, y = 0, 0
