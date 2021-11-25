@@ -4,7 +4,7 @@
 
 def island_perimeter(grid):
 	"""Defiines island representing land and water with
-    0 and 1
+    0 and 1 respectively
     """
 	x, y = 0, 0
     for row in range(1, len(grid) - 1):
