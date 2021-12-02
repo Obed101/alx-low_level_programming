@@ -1,21 +1,22 @@
 #!/usr/bin/python3
-"""This module defines isand"""
+"""This module defines island"""
 
 
 def island_perimeter(grid):
-	"""Defiines island representing land and wt with
+	"""Defiines island representing land & wt with
     0 and 1 respectively
     """
-	x, y = 0, 0
-    for row in range(1, len(grid) - 1):
-            for col in range(1, len(grid[row]) - 1):
-                if grid[row][col] == 1:
-                    if grid[row][col - 1] == 0:
-                        y += 1
-                    if grid[row][col + 1] == 0:
-                        y += 1
-                    if grid[row - 1][col] == 0:
-                        x += 1
-                    if grid[row + 1][col] == 0:
-                        x += 1
-    return x + y
+    breadth = len(grid[0])
+    length = len(grid)
+    edges = 0
+    size = 0
+
+    for i in range(length):
+        for j in range(breadth):
+            if grid[i][j] == 1:
+                size += 1
+                if (j > 0 and grid[i][j - 1] == 1):
+                    edges += 1
+                if (i > 0 and grid[i - 1][j] == 1):
+                    edges += 1
+    return size * 4 - edges * 2
