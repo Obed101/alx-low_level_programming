@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""This module defines island"""
+"""
+This module defines island
+"""
 
 
 def island_perimeter(grid):
-	"""Defiines island representing land & wt with
+    """Defiines island representing land & wt with
     0 and 1 respectively
     """
     breadth = len(grid[0])
