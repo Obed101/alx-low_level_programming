@@ -15,7 +15,7 @@ void print(int *array, size_t left, size_t right)
 	{
 	      printf("%d, ", array[left]);
 	      left++;
- 	      }
+	}
 	printf("%d\n", array[left]);
 	return;
 }

@@ -1,5 +1,5 @@
 #ifndef _SORTING_ALGOS_
-#define SORTING_ALGOS
+#define __SORTING_ALGOS__
 
 #include <stdio.h>
 #include <stddef.h>
