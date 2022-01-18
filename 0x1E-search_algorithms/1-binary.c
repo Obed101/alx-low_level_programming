@@ -1,11 +1,13 @@
 #include "search_algos.h"
 
 /*
+ * biniary_search - a function that implements binary search algo
+ * in a sorted array
  *
- *
- *
- *
- *
+ * @array: pointer to the first element
+ * @size: number of elements in array
+ * @value: the value to search for
+ * @return: The index on success else -1
  */
 int binary_search(int *array, size_t size, int value)
 {
