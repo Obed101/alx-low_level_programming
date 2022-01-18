@@ -11,8 +11,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int i;
-	int found = 0;
+	int i = 0;
 	int left, right;
 	int mid;
 
@@ -23,16 +22,29 @@ int binary_search(int *array, size_t size, int value)
 	{
 		if (array[mid] == value)
 		{
-			found = 1;
 			return (mid);
 		}
-		if (array[mid] > value)
+		else if (array[mid] > value)
 		{
 			right = mid - 1;
-			return binary_search(array, size, value);
+			while (i < right)
+			{
+				if (array[i] == value)
+				{
+					return (array[i]);
+				}
+				i++;
+			}
 		}
 		left = mid + 1;
-		return binary_search(array, size, value);
+		while (i < left)
+		{
+			if (array[i] == value)
+                                {
+                                        return (array[i]);
+                                }
+                                i++;
+		}
 	}
 	return (-1);
 }
