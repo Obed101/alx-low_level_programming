@@ -13,11 +13,10 @@ void print(int *array, size_t left, size_t right)
 	printf("Searching in array: ");
 	while (left < right)
 	{
-	      printf("%d, ", array[left]);
-	      left++;
+		printf("%d, ", array[left]);
+		left++;
 	}
 	printf("%d\n", array[left]);
-	return;
 }
 
 /*
