@@ -1,6 +1,6 @@
 #include "search_algos.h"
 
-/*
+/**
  * print - a function that prints an array
  *
  * @array: Pointer to the first element in array
@@ -19,14 +19,14 @@ void print(int *array, size_t left, size_t right)
 	printf("%d\n", array[left]);
 }
 
-/*
- * biniary_search - a function that implements binary search algo
+/**
+ * binary_search - a function that implements binary search algo
  * in a sorted array
  *
  * @array: pointer to the first element
  * @size: number of elements in array
  * @value: the value to search for
- * @return: The index on success else -1
+ * Return: The index on success else -1
  */
 int binary_search(int *array, size_t size, int value)
 {
